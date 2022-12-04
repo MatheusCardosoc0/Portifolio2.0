@@ -1,0 +1,100 @@
+.gradient-01 {
+  background-image: linear-gradient(
+    to top right,
+    rgba(0, 248, 244, 0.609) 25%,
+    rgba(0, 255, 187, 0.501) 26%,
+    rgba(2, 234, 255, 0.475) 39%,
+    rgba(9, 253, 192, 0.556) 50%,
+    rgba(9, 238, 219, 0.604) 61%,
+    rgb(9, 209, 163) 74%,
+    rgb(6, 236, 186) 100%
+  );
+  filter: blur(1px);
+  z-index: -1;
+  position: absolute;
+}
+
+.gradient-03 {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(71, 248, 233, 0.501) 10%,
+    #dee6e894 25%,
+    rgba(197, 239, 234, 0.501) 26%,
+    rgba(143, 217, 229, 0.57) 39%,
+    rgba(196, 243, 236, 0.556) 50%,
+    rgba(134, 199, 194, 0.6) 61%,
+    rgba(84, 232, 220, 0.656) 74%,
+    #98f6f0f6 90%,
+    rgba(86, 247, 220, 0.868) 100%
+  );
+}
+
+.gradient-02 {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(248, 215, 185, 0.501) 10%,
+    #e8e5de94 25%,
+    rgba(239, 226, 197, 0.501) 26%,
+    rgba(249, 243, 239, 0.57) 39%,
+    rgba(243, 208, 196, 0.556) 50%,
+    rgba(220, 220, 219, 0.6) 61%,
+    rgba(255, 242, 231, 0.656) 74%,
+    #c9c7c4f6 90%,
+    rgba(248, 246, 236, 0.868) 100%
+  );
+}
+
+.photo-effect {
+  box-shadow: inset 10px 20px 30px 9px black;
+  order: 1;
+  justify-self: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  animation: profile_animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile_animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.gradient-text-01 {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(248, 215, 185, 0.501) 10%,
+    #e8e5de94 25%,
+    rgba(239, 226, 197, 0.501) 26%,
+    rgba(249, 243, 239, 0.57) 39%,
+    rgba(243, 208, 196, 0.556) 50%,
+    rgba(220, 220, 219, 0.6) 61%,
+    rgba(255, 242, 231, 0.656) 74%,
+    #c9c7c4f6 90%,
+    rgba(248, 246, 236, 0.868) 100%
+  );
+  background-clip: text;
+  animation: colorsText ease-in-out infinite 4s;
+  transition: 300ms;
+}
+
+.section::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.section::-webkit-scrollbar-track {
+  background: rgba(233, 233, 233, 0); /* color of the tracking area */
+}
+
+.section::-webkit-scrollbar-thumb {
+  background-color: rgba(74, 237, 155, 0.387); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 10px solid rgb(255, 253, 253); /* creates padding around scroll thumb */
+}
