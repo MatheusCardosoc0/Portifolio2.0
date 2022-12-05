@@ -7,7 +7,7 @@ interface LayutProps {
 
 const Layaut = ({ children }: LayutProps) => {
   return (
-    <div className="flex justify-center gradient-03">
+    <div className="flex justify-center gradient-04">
       <Navbar />
       {children}
     </div>

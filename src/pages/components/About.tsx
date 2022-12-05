@@ -6,7 +6,7 @@ import { FaBook, FaBookOpen } from 'react-icons/fa'
 
 const About = () => {
   return (
-    <section className='section h-screen gradient-02 overflow-x-hidden overflow-y-scroll'>
+    <section className='section gradient-02 overflow-x-hidden overflow-y-scroll'>
 
 
 

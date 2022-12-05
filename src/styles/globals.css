@@ -8,5 +8,5 @@ body{
 }
 
 .section{
-  @apply w-full md:max-w-[1248px] py-[160px]
+  @apply w-full md:max-w-[1248px] py-[160px] h-screen
 }

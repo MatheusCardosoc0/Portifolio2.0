@@ -21,8 +21,8 @@
     #dee6e894 25%,
     rgba(197, 239, 234, 0.501) 26%,
     rgba(143, 217, 229, 0.57) 39%,
-    rgba(196, 243, 236, 0.556) 50%,
-    rgba(134, 199, 194, 0.6) 61%,
+    rgba(98, 251, 228, 0.556) 50%,
+    rgba(171, 244, 238, 0.6) 61%,
     rgba(84, 232, 220, 0.656) 74%,
     #98f6f0f6 90%,
     rgba(86, 247, 220, 0.868) 100%
@@ -97,4 +97,39 @@
   background-color: rgba(74, 237, 155, 0.387); /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 10px solid rgb(255, 253, 253); /* creates padding around scroll thumb */
+}
+
+
+.gradient-text-02 {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(238, 173, 20, 0.968) 10%,
+    #f2e822 25%,
+    rgb(241, 232, 56) 26%,
+    rgb(255, 240, 69) 39%,
+    rgba(238, 200, 103, 0.989) 50%,
+    rgb(242, 235, 22) 61%,
+    rgba(243, 183, 55, 0.986) 74%,
+    #e7ac23f6 90%,
+    rgba(207, 216, 33, 0.868) 100%
+  );
+  background-clip: text;
+  animation: colorsText ease-in-out infinite 4s;
+  transition: 300ms;
+  color: transparent;
+}
+
+.gradient-04 {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(248, 185, 236, 0.501) 10%,
+    #e5dee894 25%,
+    rgba(235, 197, 239, 0.501) 26%,
+    rgba(249, 239, 248, 0.57) 39%,
+    rgba(216, 176, 245, 0.556) 50%,
+    rgba(201, 167, 226, 0.6) 61%,
+    rgba(255, 231, 254, 0.656) 74%,
+    #ca8ad5f6 90%,
+    rgba(243, 236, 248, 0.868) 100%
+  );
 }
