@@ -34,7 +34,7 @@ const Navbar = () => {
             </li>
             |
             <li>
-              <LinksElement href="/components/Habilities" text="Hablidades" />
+              <LinksElement href="/components/Habilities" text="Histórico" />
             </li>
           </ul>
         </div>
