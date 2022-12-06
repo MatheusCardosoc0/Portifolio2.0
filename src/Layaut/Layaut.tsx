@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, useState } from 'react'
 import Navbar from './Navbar'
 
 interface LayutProps {
@@ -6,9 +6,15 @@ interface LayutProps {
 }
 
 const Layaut = ({ children }: LayutProps) => {
+
+  const [pageCurrent,setPageCurrent] = useState<string>('1')
+
   return (
-    <div className="flex justify-center gradient-04">
-      <Navbar />
+    <div className={`flex justify-center
+     ${pageCurrent == '1' && 'gradient-02'}
+     ${pageCurrent == '2' && 'gradient-03'}
+     ${pageCurrent == '3' && 'gradient-04'} `}>
+      <Navbar pageCurrent={pageCurrent} setPageCurrent={setPageCurrent} />
       {children}
     </div>
   )

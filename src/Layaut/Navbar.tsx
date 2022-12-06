@@ -2,7 +2,12 @@ import { motion } from "framer-motion"
 import LinksElement from "../assets/LinksElement"
 import { navVariants } from "../utils/motion"
 
-const Navbar = () => {
+interface NavbarProps {
+  pageCurrent: string
+  setPageCurrent: React.Dispatch<React.SetStateAction<string>>
+}
+
+const Navbar = ({ pageCurrent, setPageCurrent }: NavbarProps) => {
   return (
     <section className="w-full lg:max-w-[1248px] fixed top-0 z-10">
 
@@ -25,16 +30,19 @@ const Navbar = () => {
 
         <div>
           <ul className="flex gap-2">
-            <li>
-              <LinksElement href="/components/About" text="Sobre" />
+            <li onClick={() => setPageCurrent('1')}>
+              <LinksElement href="/components/About" text="Sobre"
+                Activate={pageCurrent == '1' && true} />
             </li>
             |
-            <li>
-              <LinksElement href="/components/Projects" text="Projetos" />
+            <li onClick={() => setPageCurrent('2')}>
+              <LinksElement href="/components/Projects" text="Projetos"
+                Activate={pageCurrent == '2' && true} />
             </li>
             |
-            <li>
-              <LinksElement href="/components/Habilities" text="Histórico" />
+            <li onClick={() => setPageCurrent('3')}>
+              <LinksElement href="/components/Habilities" text="Histórico"
+                Activate={pageCurrent == '3' && true} />
             </li>
           </ul>
         </div>
