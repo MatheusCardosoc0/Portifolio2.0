@@ -8,5 +8,5 @@ body{
 }
 
 .section{
-  @apply w-full lg:max-w-[1248px] py-[160px] mx-auto h-screen
+  @apply w-full lg:max-w-[1248px] py-[160px] mx-auto h-screen overflow-y-scroll
 }

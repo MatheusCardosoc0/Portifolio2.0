@@ -20,7 +20,7 @@ const Projects = () => {
 
 
         <TypingTitle text={projectListTypeCurrent}
-          styleText='text-xl sm:text-5xl drop-shadow-[5px_2px_black] sm:font-black p-1 inline' />
+          styleText='text-xl sm:text-5xl gradient-text-02 text-transparent drop-shadow-[2px_3px_0px_black] font-bold p-2' />
 
         <select className='ml-2 cursor-pointer' onChange={e => setProjectListTypeCurrent(e.target.value)}>
           <option value={'Melhores projetos'}>Melhores projetos</option>
