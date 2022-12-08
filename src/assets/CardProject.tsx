@@ -18,8 +18,6 @@ const CardProject = ({ project }: CardProjectProps) => {
 
   const { setProject, project: a } = useStateContext()
 
-  console.log(a)
-
   return (
 
     <motion.div className='bg-gray-300 w-full md:w-[520px] h-[250px] rounded-lg overflow-hidden mb-12 lg:mx-12 bg-cover cursor-pointer group '
