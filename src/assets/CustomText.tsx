@@ -11,7 +11,7 @@ export const TypingTitle = ({ styleText, text }: CustomTextProps) => (
     variants={textContainer}
     initial="hidden"
     whileInView={"show"}
-    className={`text-lg sm:text-4xl text-gray-100 font-bold ${styleText}`}>
+    className={`text-lg px-2 sm:text-4xl text-gray-100 font-bold ${styleText}`}>
     {Array.from(text).map((letter, index) => (
       <motion.span variants={textVariant2} key={index}>
         {letter === '' ? '\u80A4' : letter}
@@ -26,7 +26,7 @@ export const TypingText = ({ text, styleText }: CustomTextProps) => (
     variants={textVariant2}
     initial="hidden"
     whileInView={"show"}
-    className={`font-normal text-base  md:text-xl text-white ${styleText}`}>
+    className={`font-normal text-sm px-2  md:text-xl text-white ${styleText}`}>
     {Array.from(text).map((letter, index) => (
       <motion.span variants={textVariant2} key={index}>
         {letter === '' ? '\u80A4' : letter}

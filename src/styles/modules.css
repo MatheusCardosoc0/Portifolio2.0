@@ -49,8 +49,6 @@
   order: 1;
   justify-self: center;
   background-size: cover;
-  width: 300px;
-  height: 300px;
   animation: profile_animate 8s ease-in-out infinite 1s;
 }
 
@@ -132,4 +130,8 @@
     #ca8ad5f6 90%,
     rgba(243, 236, 248, 0.868) 100%
   );
+}
+
+.teste{
+  position: initial;
 }

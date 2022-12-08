@@ -9,7 +9,7 @@ interface ElementHistoryProps{
 
 const ElementHistory = ({text}:ElementHistoryProps) => {
   return (
-    <div className='w-[24rem] mx-auto flex items-center flex-col mb-2'>
+    <div className='md:w-[32rem] mx-auto flex items-center flex-col mb-2'>
       <TypingText text={text}
         styleText='' />
 

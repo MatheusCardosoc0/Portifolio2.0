@@ -11,19 +11,19 @@ const DetailsProject = () => {
   const { project } = useStateContext()
 
   return (
-    <section className='section gradient-03 items-center gap-20 flex flex-col'>
+    <section className='section gradient-03 items-center gap-8 md:gap-20 flex flex-col'>
 
-      <div className='absolute text-4xl font-bold left-0 flex gap-2 gradient-03 rounded-r-xl items-center p-1'>
+      <div className='absolute md:text-4xl font-bold left-0 top-32 flex gap-2 gradient-03 rounded-r-xl items-center p-1'>
         <AiOutlineArrowLeft />
-        <LinksElement text='Voltar' href='/components/Projects'/>
+        <LinksElement text='Voltar' href='/components/Projects' />
       </div>
 
       <TypingTitle text={'Projeto: ' + project.title} styleText="text-gray-900" />
 
       <motion.img src={project.image} className="w-[90%] rounded-lg" />
 
-      <motion.div className='flex items-center gap-20'>
-        <span className='text-center text-xl font-bold w-[10rem]'>
+      <motion.div className='flex flex-col md:flex-row gap-8 items-center md:gap-20'>
+        <span className='text-center text-xl font-bold w-[90%] md:w-[10rem]'>
           <p>Data de criação:</p>
           <TypingText text={project.date} styleText="text-center md:text-2xl text-black" />
         </span>
@@ -34,12 +34,12 @@ const DetailsProject = () => {
         </span>
       </motion.div>
 
-      <div className='w-[40rem] flex flex-col gap-2'>
-        <p className='text-xl font-bold w-[24rem]'>Descrição do projeto</p>
+      <div className='md:w-[40rem] flex flex-col gap-2'>
+        <p className='text-xl font-bold md:w-[24rem]'>Descrição do projeto</p>
         <TypingText text={project.description} styleText="sm:font-bold md:text-2xl text-black" />
       </div>
 
-      <div className='flex gap-40'>
+      <div className='flex flex-col md:flex-row gap-8 md:gap-40'>
         {project.link && (
           <a className='gradient-04 border-4 border-yellow-500 flex items-center gap-2 p-2 rounded-xl text-2xl cursor-pointer group'
             href={project.link}

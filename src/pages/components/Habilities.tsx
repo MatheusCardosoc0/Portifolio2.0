@@ -7,7 +7,7 @@ import { ConstHabilities } from '../../Constants/ConstantsHabilities'
 
 const Habilities = () => {
   return (
-    <section className='section gradient-04 flex text-center flex-col gap-40 overflow-y-scroll'>
+    <section className='section gradient-04 flex text-center flex-col gap-20 md:gap-40 overflow-y-scroll'>
 
       <TypingTitle text='Inicio' styleText='sm:text-5xl' />
 
