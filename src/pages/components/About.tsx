@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { TypingText, TypingTitle } from '../../assets/CustomText'
 import { fadeIn, zoomIn } from '../../utils/motion'
 import { FaBook, FaBookOpen } from 'react-icons/fa'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 const About = () => {
   return (
@@ -20,11 +21,27 @@ const About = () => {
           <TypingText text='Tenho conhecimento tanto de back-end com nodejs quanto de front-end com react-js, possuo preferência na atuação com front-end.' />
         </div>
 
-        <motion.img src='/profile.jpg'
-          className='rounded-full photo-effect md:w-[300px] md:h-[300px] w-[200px] h-[200px] mx-auto md:mx-[initial]'
+        <motion.div
           variants={zoomIn(0.25, 1)}
           initial="hidden"
-          whileInView={"show"} />
+          whileInView={"show"}>
+          <img src='/profile.jpg'
+            className='rounded-full photo-effect md:w-[300px] md:h-[300px] w-[200px] h-[200px] mx-auto md:mx-[initial]'
+          />
+
+         <div className='flex justify-around  text-4xl'>
+         <a href='https://www.linkedin.com/in/matheus-cardoso-026488244/' target={"_blank"}>
+            <AiFillLinkedin className='text-blue-500 bg-white rounded-lg cursor-pointer' />
+          </a>
+          <a href='https://github.com/MatheusCardosoc0' target={"_blank"}>
+            <AiFillGithub className='bg-white rounded-full cursor-pointer' />
+          </a>
+         </div>
+
+         <p className='mt-5 text-white drop-shadow-[1px_1px_1px_black] text-lg font-bold'>
+          Numero de telefone: (62) 99604-2564
+          </p>
+        </motion.div>
 
 
 

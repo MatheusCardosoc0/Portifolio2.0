@@ -8,8 +8,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <UseDataContext>
       <Layaut>
-      <Component {...pageProps} />
-    </Layaut>
+        <Component {...pageProps} />
+      </Layaut>
     </UseDataContext>
   )
 }

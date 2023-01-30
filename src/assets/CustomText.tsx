@@ -11,7 +11,7 @@ export const TypingTitle = ({ styleText, text }: CustomTextProps) => (
     variants={textContainer}
     initial="hidden"
     whileInView={"show"}
-    className={`text-lg px-2 sm:text-4xl text-gray-100 font-bold ${styleText}`}>
+    className={`text-lg px-2 sm:text-4xl text-gray-100 drop-shadow-[1px_1px_1px_black] font-bold ${styleText}`}>
     {text}
   </motion.p>
 )
@@ -22,7 +22,7 @@ export const TypingText = ({ text, styleText }: CustomTextProps) => (
     variants={textVariant2}
     initial="hidden"
     whileInView={"show"}
-    className={`font-normal text-sm px-2  md:text-xl text-white ${styleText}`}>
+    className={`font-normal text-sm px-2 drop-shadow-[1px_1px_1px_black]  md:text-xl text-white ${styleText}`}>
    {text}
   </motion.h2>
 )
